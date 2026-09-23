@@ -1,0 +1,21 @@
+@model AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+<section class="admin-header"><div><span class="eyebrow">ADMIN PANEL</span><h1>Dashboard</h1><p>Manage your Foodie ordering platform.</p></div><a class="btn" asp-action="Reports">Reports</a></section>
+<div class="stats-grid">
+<div class="stat"><span>Customers</span><strong>@Model.UserCount</strong></div>
+<div class="stat"><span>Foods</span><strong>@Model.FoodCount</strong></div>
+<div class="stat"><span>Orders</span><strong>@Model.OrderCount</strong></div>
+<div class="stat"><span>Revenue</span><strong>Rs. @Model.Revenue.ToString("N0")</strong></div>
+</div>
+<div class="admin-links">
+<a asp-action="Foods"><b>🍔 Food Management</b><span>Add, edit, delete and enable food</span></a>
+<a asp-action="Orders"><b>📦 Order Management</b><span>View orders and update status</span></a>
+<a asp-action="Users"><b>👥 User Management</b><span>View customers and roles</span></a>
+<a asp-action="Reports"><b>📊 Reports</b><span>CSV, PDF and print options</span></a>
+</div>
+<h2 class="admin-section-title">Recent Orders</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Customer</th><th>Total</th><th>Status</th></tr></thead><tbody>
+@foreach (var o in Model.RecentOrders) { <tr><td>#@o.Id</td><td>@o.User?.Name</td><td>Rs. @o.TotalAmount.ToString("N2")</td><td><span class="status @o.Status.ToLower()">@o.Status</span></td></tr> }
+</tbody></table></div>

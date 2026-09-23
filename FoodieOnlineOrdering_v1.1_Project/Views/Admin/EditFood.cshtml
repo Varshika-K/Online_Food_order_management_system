@@ -1,0 +1,13 @@
+@model Food
+@{
+    ViewData["Title"] = "Edit Food";
+}
+<section class="admin-header"><div><span class="eyebrow">ADMIN / FOODS</span><h1>Edit Food</h1></div></section>
+<div class="form-panel"><form asp-action="EditFood" method="post">
+<input type="hidden" asp-for="Id"><input type="hidden" asp-for="CreatedAt">
+<div asp-validation-summary="ModelOnly" class="validation"></div>
+<div class="form-grid"><div><label>Name</label><input asp-for="Name"></div><div><label>Category</label><input asp-for="Category"></div><div><label>Price</label><input asp-for="Price" type="number" step="0.01"></div><div><label>Image URL</label><input asp-for="ImageUrl"></div></div>
+<label>Description</label><textarea asp-for="Description" rows="4"></textarea>
+<label class="check"><input asp-for="IsAvailable"> Available for customers</label>
+<button class="btn" type="submit">Update Food</button><a class="btn btn-outline" asp-action="Foods">Cancel</a>
+@Html.AntiForgeryToken()</form></div>

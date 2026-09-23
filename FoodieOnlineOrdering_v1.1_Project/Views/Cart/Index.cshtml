@@ -1,0 +1,39 @@
+@using System.Collections
+@{
+    ViewData["Title"] = "Shopping Cart";
+    var items = (IEnumerable<dynamic>)Model;
+}
+<section class="page-banner compact"><span class="eyebrow">YOUR SHOPPING CART</span><h1>Cart</h1></section>
+@if (!items.Any())
+{
+    <div class="empty-state"><div>🛒</div><h2>Your cart is empty</h2><p>Add something delicious from the menu.</p><a class="btn" asp-controller="Menu" asp-action="Index">Browse Menu</a></div>
+}
+else
+{
+<div class="cart-wrap">
+    <div class="cart-list">
+    @foreach (var item in items)
+    {
+        <div class="cart-row">
+            <img src="@item.Food.ImageUrl" alt="@item.Food.Name">
+            <div class="cart-info"><h3>@item.Food.Name</h3><p>Rs. @item.Food.Price.ToString("N2") each</p></div>
+            <form asp-action="Update" method="post" class="qty-form">
+                <input type="hidden" name="id" value="@item.Food.Id">
+                <input type="number" min="1" max="20" name="quantity" value="@item.Quantity">
+                <button class="btn small" type="submit">Update</button>
+                @Html.AntiForgeryToken()
+            </form>
+            <strong>Rs. @((item.Food.Price * item.Quantity).ToString("N2"))</strong>
+            <form asp-action="Remove" method="post"><input type="hidden" name="id" value="@item.Food.Id"><button class="delete-btn" type="submit">Remove</button>@Html.AntiForgeryToken()</form>
+        </div>
+    }
+    </div>
+    <aside class="summary-card">
+        <h2>Order Summary</h2>
+        <div><span>Subtotal</span><strong>Rs. @(((decimal)ViewBag.Total).ToString("N2"))</strong></div>
+        <div><span>Delivery</span><strong>Free</strong></div>
+        <hr><div class="total"><span>Total</span><strong>Rs. @(((decimal)ViewBag.Total).ToString("N2"))</strong></div>
+        <a class="btn full" asp-controller="Checkout" asp-action="Index">Checkout</a>
+    </aside>
+</div>
+}

@@ -1,0 +1,23 @@
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="auth-page">
+    <div class="auth-card wide">
+        <span class="eyebrow">JOIN FOODIE</span>
+        <h1>Create account</h1>
+        <p class="muted">Password must contain letters, numbers, a special character and be at least 8 characters.</p>
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="validation"></div>
+            <div class="form-grid">
+                <div><label>Full Name</label><input asp-for="Name" /><span asp-validation-for="Name" class="validation"></span></div>
+                <div><label>Username</label><input asp-for="Username" /><span asp-validation-for="Username" class="validation"></span></div>
+                <div><label>Email</label><input asp-for="Email" /><span asp-validation-for="Email" class="validation"></span></div>
+                <div><label>Password</label><input asp-for="Password" /><span asp-validation-for="Password" class="validation"></span></div>
+                <div><label>Confirm Password</label><input asp-for="ConfirmPassword" /><span asp-validation-for="ConfirmPassword" class="validation"></span></div>
+            </div>
+            <button class="btn" type="submit">Register</button>
+            @Html.AntiForgeryToken()
+        </form>
+    </div>
+</div>

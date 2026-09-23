@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Home";
+}
+<section class="hero">
+    <div class="hero-copy">
+        <span class="eyebrow">WELCOME TO FOODIE</span>
+        <h1>Fast Food<br /><em>Restaurant</em></h1>
+        <p>Delicious meals prepared with care and delivered straight to your door. Order your favourites in just a few clicks.</p>
+        <a class="btn btn-large" asp-controller="Menu" asp-action="Index">Order Now</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85" alt="Burger and fries">
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <span class="eyebrow">WHY CHOOSE US</span>
+        <h2>Good food, simple ordering</h2>
+    </div>
+    <div class="feature-grid">
+        <div class="feature-card"><span>🍔</span><h3>Fresh Food</h3><p>Quality ingredients and carefully prepared meals.</p></div>
+        <div class="feature-card"><span>⚡</span><h3>Fast Delivery</h3><p>Quick order processing and reliable delivery.</p></div>
+        <div class="feature-card"><span>🔒</span><h3>Secure Account</h3><p>Your login and order information stays protected.</p></div>
+    </div>
+</section>
+
+<section class="promo">
+    <div><span class="eyebrow">TODAY'S SPECIAL</span><h2>20% off selected favourites</h2><p>Explore our menu and discover something delicious.</p></div>
+    <a class="btn" asp-controller="Menu" asp-action="Index">View Menu</a>
+</section>

@@ -1,0 +1,46 @@
+@model CheckoutViewModel
+@{
+    ViewData["Title"] = "Checkout";
+}
+<section class="page-banner compact"><span class="eyebrow">CHECKOUT</span><h1>Complete your order</h1><p>Secure checkout with delivery and payment confirmation.</p></section>
+<div class="checkout-card">
+    <form asp-action="PlaceOrder" method="post" id="checkoutForm">
+        <div asp-validation-summary="ModelOnly" class="validation"></div>
+        <label asp-for="DeliveryAddress">Delivery Address</label>
+        <textarea asp-for="DeliveryAddress" rows="4" placeholder="House number, street, city"></textarea>
+        <span asp-validation-for="DeliveryAddress" class="validation"></span>
+
+        <label asp-for="PaymentMethod">Payment Method</label>
+        <select asp-for="PaymentMethod" id="paymentMethod">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Online Payment">Online Payment (Demo)</option>
+        </select>
+
+        <div id="onlinePaymentBox" class="payment-box" style="display:none">
+            <h3>Online Payment — Demo</h3>
+            <p class="muted">For the coursework demo only. Do not enter a real card. The application stores only the last four digits.</p>
+            <label asp-for="CardHolderName">Card Holder Name</label>
+            <input asp-for="CardHolderName" autocomplete="off" />
+            <label asp-for="CardNumber">16-digit Card Number</label>
+            <input asp-for="CardNumber" inputmode="numeric" maxlength="16" autocomplete="off" />
+            <div class="form-grid-2">
+                <div><label asp-for="Expiry">Expiry</label><input asp-for="Expiry" placeholder="MM/YY" autocomplete="off" /></div>
+                <div><label asp-for="Cvv">CVV</label><input asp-for="Cvv" inputmode="numeric" maxlength="3" autocomplete="off" /></div>
+            </div>
+        </div>
+
+        <div class="checkout-total">Total: <strong>Rs. @(((decimal)ViewBag.Total).ToString("N2"))</strong></div>
+        <button class="btn" type="submit">Confirm &amp; Place Order</button>
+        @Html.AntiForgeryToken()
+    </form>
+</div>
+
+@section Scripts {
+<script>
+const paymentMethod = document.getElementById('paymentMethod');
+const onlineBox = document.getElementById('onlinePaymentBox');
+function togglePaymentBox(){ onlineBox.style.display = paymentMethod.value === 'Online Payment' ? 'block' : 'none'; }
+paymentMethod.addEventListener('change', togglePaymentBox);
+togglePaymentBox();
+</script>
+}

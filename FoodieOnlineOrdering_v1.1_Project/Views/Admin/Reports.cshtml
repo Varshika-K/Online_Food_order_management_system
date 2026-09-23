@@ -1,0 +1,35 @@
+@model List<Order>
+@{
+    ViewData["Title"] = "Reports";
+}
+<section class="admin-header"><div><span class="eyebrow">ADMIN / REPORTS</span><h1>Order Reports</h1><p>Export the current order report as CSV, PDF or print it.</p></div>
+<div class="report-buttons"><a class="btn" asp-action="ExportCsv">Download CSV</a><button class="btn" onclick="downloadReportPdf()">Download PDF</button><button class="btn btn-outline" onclick="window.print()">Print</button></div></section>
+
+<div id="reportTable" class="table-wrap report-print">
+<table><thead><tr><th>Order</th><th>Customer</th><th>Date</th><th>Status</th><th>Payment</th><th>Total</th></tr></thead><tbody>
+@foreach (var o in Model)
+{
+<tr><td>#@o.Id</td><td>@o.User?.Name</td><td>@o.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td><td>@o.Status</td><td>@o.PaymentMethod</td><td>Rs. @o.TotalAmount.ToString("N2")</td></tr>
+}
+</tbody></table></div>
+
+@section Scripts {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+<script>
+function downloadReportPdf() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    doc.setFontSize(18);
+    doc.text("Foodie - Order Report", 14, 18);
+    doc.setFontSize(9);
+    let y = 30;
+    document.querySelectorAll("#reportTable tbody tr").forEach(row => {
+        const cells = [...row.querySelectorAll("td")].map(x => x.innerText.replace(/\n/g, " ").trim());
+        doc.text(cells.join(" | ").substring(0, 115), 14, y);
+        y += 7;
+        if (y > 280) { doc.addPage(); y = 18; }
+    });
+    doc.save("foodie-order-report.pdf");
+}
+</script>
+}

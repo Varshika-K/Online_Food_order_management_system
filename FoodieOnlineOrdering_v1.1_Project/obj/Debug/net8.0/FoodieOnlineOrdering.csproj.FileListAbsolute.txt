@@ -1,0 +1,208 @@
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.AssemblyInfoInputs.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.AssemblyInfo.cs
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.RazorAssemblyInfo.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.RazorAssemblyInfo.cs
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\appsettings.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.staticwebassets.runtime.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.staticwebassets.endpoints.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.exe
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.deps.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.runtimeconfig.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.pdb
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Humanizer.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\scopedcss\bundle\FoodieOnlineOrdering.styles.css
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOn.49A448B8.Up2Date
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\refint\FoodieOnlineOrdering.dll
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.pdb
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.genruntimeconfig.cache
+C:\Users\DELL\Downloads\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\ref\FoodieOnlineOrdering.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\appsettings.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.staticwebassets.endpoints.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.staticwebassets.runtime.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.exe
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.deps.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.runtimeconfig.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\FoodieOnlineOrdering.pdb
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Humanizer.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\MySqlConnector.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.CodeDom.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.csproj.AssemblyReference.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.AssemblyInfoInputs.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.AssemblyInfo.cs
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.csproj.CoreCompileInputs.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.MvcApplicationPartsAssemblyInfo.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.RazorAssemblyInfo.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.RazorAssemblyInfo.cs
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\scopedcss\bundle\FoodieOnlineOrdering.styles.css
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.build.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.development.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOn.49A448B8.Up2Date
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\refint\FoodieOnlineOrdering.dll
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.pdb
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\FoodieOnlineOrdering.genruntimeconfig.cache
+D:\LEVEL6 SEMI1\Software change Management\SCM PROJECT\Online_Food_order_management_system\FoodieOnlineOrdering_v1.1_Project\obj\Debug\net8.0\ref\FoodieOnlineOrdering.dll

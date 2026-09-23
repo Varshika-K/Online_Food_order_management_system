@@ -1,0 +1,18 @@
+@model Order
+@{
+    ViewData["Title"] = "Order Invoice";
+}
+<div class="invoice" id="invoice">
+    <div class="invoice-head"><div><span class="eyebrow">FOODIE</span><h1>ORDER INVOICE</h1></div><div><b>#@Model.Id</b><br>@Model.CreatedAt.ToLocalTime().ToString("dd MMM yyyy")</div></div>
+    <p><b>Customer:</b> @Model.User?.Name</p>
+    <p><b>Delivery:</b> @Model.DeliveryAddress</p>
+    <p><b>Payment:</b> @Model.PaymentMethod</p>
+    <table><thead><tr><th>Food</th><th>Qty</th><th>Price</th><th>Total</th></tr></thead><tbody>
+    @foreach (var item in Model.Items)
+    {
+        <tr><td>@item.FoodName</td><td>@item.Quantity</td><td>Rs. @item.UnitPrice.ToString("N2")</td><td>Rs. @item.LineTotal.ToString("N2")</td></tr>
+    }
+    </tbody></table>
+    <h2 class="invoice-total">Total: Rs. @Model.TotalAmount.ToString("N2")</h2>
+    <button class="btn no-print" onclick="window.print()">Print / Save as PDF</button>
+</div>

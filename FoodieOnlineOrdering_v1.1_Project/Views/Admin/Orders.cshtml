@@ -1,0 +1,11 @@
+@model List<Order>
+@{
+    ViewData["Title"] = "Order Management";
+}
+<section class="admin-header"><div><span class="eyebrow">ADMIN / ORDERS</span><h1>Order Management</h1></div></section>
+<div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th><th>Address</th><th>Status</th></tr></thead><tbody>
+@foreach (var o in Model)
+{
+<tr><td>#@o.Id<br><small>@o.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")</small></td><td>@o.User?.Name</td><td>@string.Join(", ", o.Items.Select(i => $"{i.FoodName} x{i.Quantity}"))</td><td>Rs. @o.TotalAmount.ToString("N2")</td><td>@o.PaymentMethod</td><td>@o.DeliveryAddress</td><td><form asp-action="UpdateOrderStatus" method="post"><input type="hidden" name="id" value="@o.Id"><select name="status" onchange="this.form.submit()"><option selected="@(o.Status=="Pending" ? "selected" : null)">Pending</option><option selected="@(o.Status=="Preparing" ? "selected" : null)">Preparing</option><option selected="@(o.Status=="Out for Delivery" ? "selected" : null)">Out for Delivery</option><option selected="@(o.Status=="Delivered" ? "selected" : null)">Delivered</option><option selected="@(o.Status=="Cancelled" ? "selected" : null)">Cancelled</option></select>@Html.AntiForgeryToken()</form></td></tr>
+}
+</tbody></table></div>

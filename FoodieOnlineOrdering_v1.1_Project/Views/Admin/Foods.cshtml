@@ -1,0 +1,11 @@
+@model List<Food>
+@{
+    ViewData["Title"] = "Food Management";
+}
+<section class="admin-header"><div><span class="eyebrow">ADMIN / FOODS</span><h1>Food Management</h1></div><a class="btn" asp-action="CreateFood">+ Add Food</a></section>
+<div class="table-wrap"><table><thead><tr><th>Image</th><th>Name</th><th>Category</th><th>Price</th><th>Available</th><th>Actions</th></tr></thead><tbody>
+@foreach (var f in Model)
+{
+<tr><td><img class="table-img" src="@f.ImageUrl" alt=""></td><td>@f.Name</td><td>@f.Category</td><td>Rs. @f.Price.ToString("N2")</td><td>@(f.IsAvailable ? "Yes" : "No")</td><td><a class="btn small" asp-action="EditFood" asp-route-id="@f.Id">Edit</a> <form class="inline" asp-action="DeleteFood" method="post"><input type="hidden" name="id" value="@f.Id"><button class="delete-btn" onclick="return confirm('Delete this food?')">Delete</button>@Html.AntiForgeryToken()</form></td></tr>
+}
+</tbody></table></div>

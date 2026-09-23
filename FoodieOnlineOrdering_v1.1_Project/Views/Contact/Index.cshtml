@@ -1,0 +1,16 @@
+@model ContactMessage
+@{
+    ViewData["Title"] = "Contact";
+}
+<section class="page-banner compact"><span class="eyebrow">CONTACT US</span><h1>We would love to hear from you.</h1></section>
+<div class="contact-grid">
+    <div class="contact-art"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80" alt="Customer service"></div>
+    <form class="contact-form" asp-action="Index" method="post">
+        <div asp-validation-summary="ModelOnly" class="validation"></div>
+        <label>Name</label><input asp-for="Name">
+        <label>Email</label><input asp-for="Email">
+        <label>Message</label><textarea asp-for="Message" rows="7"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+        @Html.AntiForgeryToken()
+    </form>
+</div>

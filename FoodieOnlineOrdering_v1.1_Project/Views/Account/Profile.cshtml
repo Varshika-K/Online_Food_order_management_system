@@ -1,0 +1,10 @@
+@model User
+@{
+    ViewData["Title"] = "My Profile";
+}
+<section class="page-banner compact"><span class="eyebrow">MY ACCOUNT</span><h1>My Profile</h1></section>
+<div class="profile-card">
+    <div class="avatar">@Model.Name.Substring(0,1).ToUpper()</div>
+    <div><h2>@Model.Name</h2><p>@Model.Email</p><p><b>Username:</b> @Model.Username</p><p><b>Account:</b> @Model.Role</p></div>
+    <a class="btn" asp-controller="Orders" asp-action="Index">My Orders</a>
+</div>

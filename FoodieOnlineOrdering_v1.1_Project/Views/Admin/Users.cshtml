@@ -1,0 +1,11 @@
+@model List<User>
+@{
+    ViewData["Title"] = "User Management";
+}
+<section class="admin-header"><div><span class="eyebrow">ADMIN / USERS</span><h1>User Management</h1></div></section>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Name</th><th>Username</th><th>Email</th><th>Role</th><th>Created</th></tr></thead><tbody>
+@foreach (var u in Model)
+{
+<tr><td>@u.Id</td><td>@u.Name</td><td>@u.Username</td><td>@u.Email</td><td><form asp-action="UpdateRole" method="post"><input type="hidden" name="id" value="@u.Id"><select name="role" onchange="this.form.submit()"><option selected="@(u.Role=="Customer" ? "selected" : null)">Customer</option><option selected="@(u.Role=="Admin" ? "selected" : null)">Admin</option></select>@Html.AntiForgeryToken()</form></td><td>@u.CreatedAt.ToLocalTime().ToString("dd MMM yyyy")</td></tr>
+}
+</tbody></table></div>

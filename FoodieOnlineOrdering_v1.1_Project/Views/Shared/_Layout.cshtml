@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<header class="topbar">
+    <a class="brand" asp-controller="Home" asp-action="Index">Foodie</a>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">HOME</a>
+        <a asp-controller="Menu" asp-action="Index">MENU</a>
+        <a asp-controller="Home" asp-action="About">ABOUT</a>
+        <a asp-controller="Contact" asp-action="Index">CONTACT</a>
+    </nav>
+    <div class="nav-actions">
+        @if (Context.Session.GetInt32("UserId") != null)
+        {
+            <a class="icon-link" asp-controller="Account" asp-action="Profile">👤</a>
+            <a class="icon-link" asp-controller="Cart" asp-action="Index">🛒</a>
+            @if (Context.Session.GetString("Role") == "Admin")
+            {
+                <a class="admin-mini" asp-controller="Admin" asp-action="Dashboard">Admin</a>
+            }
+            <a class="btn btn-outline" asp-controller="Account" asp-action="Logout">Logout</a>
+        }
+        else
+        {
+            <a class="icon-link" asp-controller="Account" asp-action="Login">👤</a>
+            <a class="btn" asp-controller="Account" asp-action="Login">Login</a>
+        }
+    </div>
+</header>
+
+@if (TempData["Success"] != null)
+{
+    <div class="toast success" id="toast">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="toast error" id="toast">@TempData["Error"]</div>
+}
+
+<main>
+    @RenderBody()
+</main>
+
+<footer class="footer">
+    <div>
+        <h2>Foodie</h2>
+        <p>Fresh food. Fast delivery. Happy customers.</p>
+    </div>
+    <div>
+        <h4>Quick Links</h4>
+        <a asp-controller="Menu" asp-action="Index">Menu</a>
+        <a asp-controller="Orders" asp-action="Index">My Orders</a>
+        <a asp-controller="Contact" asp-action="Index">Contact</a>
+    </div>
+    <div>
+        <h4>Opening Hours</h4>
+        <p>Every day: 10:00 AM - 11:00 PM</p>
+    </div>
+</footer>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
