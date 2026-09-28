@@ -1,16 +1,148 @@
-@model ContactMessage
+﻿@model ContactMessage
+
 @{
     ViewData["Title"] = "Contact";
 }
-<section class="page-banner compact"><span class="eyebrow">CONTACT US</span><h1>We would love to hear from you.</h1></section>
+
+<section class="page-banner compact">
+
+    <span class="eyebrow">CONTACT US</span>
+
+    <h1>We would love to hear from you.</h1>
+
+    <p>
+        Have a question or feedback?
+        Send us a message and our team will get back to you.
+    </p>
+
+</section>
+
+
 <div class="contact-grid">
-    <div class="contact-art"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80" alt="Customer service"></div>
-    <form class="contact-form" asp-action="Index" method="post">
-        <div asp-validation-summary="ModelOnly" class="validation"></div>
-        <label>Name</label><input asp-for="Name">
-        <label>Email</label><input asp-for="Email">
-        <label>Message</label><textarea asp-for="Message" rows="7"></textarea>
-        <button class="btn" type="submit">Send Message</button>
-        @Html.AntiForgeryToken()
-    </form>
+
+    <div class="contact-art">
+
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80"
+             alt="Customer service">
+
+    </div>
+
+
+    <div class="contact-form">
+
+        <form asp-controller="Contact"
+              asp-action="Index"
+              method="post">
+
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly"
+                 class="validation">
+            </div>
+
+
+            <label asp-for="Name">
+                Name
+            </label>
+
+            <input asp-for="Name"
+                   placeholder="Enter your name" />
+
+            <span asp-validation-for="Name"
+                  class="validation">
+            </span>
+
+
+            <label asp-for="Email">
+                Email
+            </label>
+
+            <input asp-for="Email"
+                   type="email"
+                   placeholder="Enter your email" />
+
+            <span asp-validation-for="Email"
+                  class="validation">
+            </span>
+
+
+            <label asp-for="Message">
+                Message
+            </label>
+
+            <textarea asp-for="Message"
+                      rows="7"
+                      placeholder="Write your message here..."></textarea>
+
+            <span asp-validation-for="Message"
+                  class="validation">
+            </span>
+
+
+            <button class="btn"
+                    type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
 </div>
+
+
+@if (TempData["Success"] != null)
+{
+    <div id="successPopup"
+         class="success-popup">
+
+        <div class="success-popup-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Thank You!</h2>
+
+            <p>
+                @TempData["Success"]
+            </p>
+
+            <button type="button"
+                    class="btn"
+                    onclick="closeSuccessPopup()">
+                OK
+            </button>
+
+        </div>
+
+    </div>
+}
+
+
+<script>
+
+    function closeSuccessPopup() {
+
+        const popup =
+            document.getElementById("successPopup");
+
+        if (popup) {
+            popup.style.display = "none";
+        }
+
+    }
+
+
+    setTimeout(function () {
+
+        const popup =
+            document.getElementById("successPopup");
+
+        if (popup) {
+            popup.style.display = "none";
+        }
+
+    }, 5000);
+
+</script>

@@ -1,45 +1,149 @@
 @model List<Food>
+
 @{
     ViewData["Title"] = "Menu";
 }
+
 <section class="page-banner compact">
     <span class="eyebrow">OUR MENU</span>
+
     <h1>Choose your favourite</h1>
-    <p>Search, filter and add delicious food to your cart.</p>
+
+    <p>
+        Search, filter and add delicious food to your cart.
+    </p>
 </section>
+
 
 <section class="menu-tools">
+
     <form method="get" class="search-form">
-        <input name="search" value="@ViewBag.Search" placeholder="Search food..." />
-        <select name="category">
+
+        <!-- Search box -->
+        <input name="search"
+               id="searchInput"
+               value="@ViewBag.Search"
+               placeholder="Search food..." />
+
+
+        <!-- Category -->
+        <select name="category" id="categorySelect">
+
             <option value="">All categories</option>
+
             @foreach (var c in (List<string>)ViewBag.Categories)
             {
-                <option value="@c" selected="@(ViewBag.Category == c ? "selected" : null)">@c</option>
+                if (ViewBag.Category == c)
+                {
+                    <option value="@c" selected>@c</option>
+                }
+                else
+                {
+                    <option value="@c">@c</option>
+                }
             }
+
         </select>
-        <button class="btn" type="submit">Search</button>
+
+
+        <!-- Search button -->
+        <button class="btn" type="submit">
+            Search
+        </button>
+
+
+        <!-- Clear button -->
+        <button class="btn clear-btn"
+                type="button"
+                onclick="clearSearch()">
+            Clear
+        </button>
+
     </form>
+
 </section>
 
+
+<!-- Food cards -->
+
 <div class="food-grid">
-@foreach (var food in Model)
-{
-    <article class="food-card">
-        <div class="food-img-wrap"><img src="@food.ImageUrl" alt="@food.Name" loading="lazy"></div>
-        <div class="food-body">
-            <span class="tag">@food.Category</span>
-            <h3>@food.Name</h3>
-            <p>@food.Description</p>
-            <div class="food-bottom">
-                <strong>Rs. @food.Price.ToString("N2")</strong>
-                <form asp-controller="Cart" asp-action="Add" method="post">
-                    <input type="hidden" name="id" value="@food.Id" />
-                    <button class="round-add" title="Add to cart">+</button>
-                    @Html.AntiForgeryToken()
-                </form>
+
+    @foreach (var food in Model)
+    {
+        <article class="food-card">
+
+            <div class="food-img-wrap">
+                <img src="@food.ImageUrl"
+                     alt="@food.Name"
+                     loading="lazy">
             </div>
-        </div>
-    </article>
-}
+
+
+            <div class="food-body">
+
+                <span class="tag">
+                    @food.Category
+                </span>
+
+
+                <h3>
+                    @food.Name
+                </h3>
+
+
+                <p>
+                    @food.Description
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        Rs. @food.Price.ToString("N2")
+                    </strong>
+
+
+                    <form asp-controller="Cart"
+                          asp-action="Add"
+                          method="post">
+
+                        <input type="hidden"
+                               name="id"
+                               value="@food.Id" />
+
+                        <button class="round-add"
+                                type="submit"
+                                title="Add to cart">
+                            +
+                        </button>
+
+                        @Html.AntiForgeryToken()
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </article>
+    }
+
 </div>
+
+
+<script>
+
+    function clearSearch() {
+
+        // Clear search text
+        document.getElementById("searchInput").value = "";
+
+        // Reset category
+        document.getElementById("categorySelect").value = "";
+
+        // Go back to normal Menu page
+        window.location.href = "/Menu";
+
+    }
+
+</script>

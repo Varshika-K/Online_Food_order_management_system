@@ -1,0 +1,88 @@
+﻿@model List<ContactMessage>
+
+@{
+    ViewData["Title"] = "Customer Messages";
+}
+
+<section class="page-banner compact">
+
+    <span class="eyebrow">ADMIN</span>
+
+    <h1>Customer Messages</h1>
+
+    <p>
+        View messages sent by customers.
+    </p>
+
+</section>
+
+
+<div class="admin-page">
+
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="empty-state">
+
+            <h3>No messages yet</h3>
+
+            <p>
+                Customer messages will appear here.
+            </p>
+
+        </div>
+    }
+    else
+    {
+        <div class="table-card">
+
+            <table class="admin-table">
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    @foreach (var contactMessage in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @contactMessage.Id
+                            </td>
+
+                            <td>
+                                @contactMessage.Name
+                            </td>
+
+                            <td>
+                                @contactMessage.Email
+                            </td>
+
+                            <td>
+                                @contactMessage.Message
+                            </td>
+
+                            <td>
+                                @contactMessage.CreatedAt.ToString("dd/MM/yyyy hh:mm tt")
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

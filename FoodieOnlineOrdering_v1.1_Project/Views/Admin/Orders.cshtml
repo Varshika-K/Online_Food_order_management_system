@@ -1,11 +1,228 @@
 @model List<Order>
+
 @{
     ViewData["Title"] = "Order Management";
 }
-<section class="admin-header"><div><span class="eyebrow">ADMIN / ORDERS</span><h1>Order Management</h1></div></section>
-<div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th><th>Address</th><th>Status</th></tr></thead><tbody>
-@foreach (var o in Model)
-{
-<tr><td>#@o.Id<br><small>@o.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")</small></td><td>@o.User?.Name</td><td>@string.Join(", ", o.Items.Select(i => $"{i.FoodName} x{i.Quantity}"))</td><td>Rs. @o.TotalAmount.ToString("N2")</td><td>@o.PaymentMethod</td><td>@o.DeliveryAddress</td><td><form asp-action="UpdateOrderStatus" method="post"><input type="hidden" name="id" value="@o.Id"><select name="status" onchange="this.form.submit()"><option selected="@(o.Status=="Pending" ? "selected" : null)">Pending</option><option selected="@(o.Status=="Preparing" ? "selected" : null)">Preparing</option><option selected="@(o.Status=="Out for Delivery" ? "selected" : null)">Out for Delivery</option><option selected="@(o.Status=="Delivered" ? "selected" : null)">Delivered</option><option selected="@(o.Status=="Cancelled" ? "selected" : null)">Cancelled</option></select>@Html.AntiForgeryToken()</form></td></tr>
-}
-</tbody></table></div>
+
+<section class="admin-header">
+    <div>
+        <span class="eyebrow">ADMIN / ORDERS</span>
+        <h1>Order Management</h1>
+    </div>
+</section>
+
+
+<div class="table-wrap">
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th>Payment</th>
+                <th>Address</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+
+            @foreach (var o in Model)
+            {
+                <tr>
+
+                    <td>
+                        #@o.Id
+                        <br />
+                        <small>
+                            @o.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")
+                        </small>
+                    </td>
+
+
+                    <td>
+                        @o.User?.Name
+                    </td>
+
+
+                    <td>
+                        @string.Join(", ",
+                        o.Items.Select(i => $"{i.FoodName} x{i.Quantity}"))
+                </td>
+
+
+                <td>
+                    Rs. @o.TotalAmount.ToString("N2")
+                </td>
+
+
+                <td>
+                    @o.PaymentMethod
+                </td>
+
+
+                <td>
+                    @o.DeliveryAddress
+                </td>
+
+
+                <td>
+
+                    <form asp-action="UpdateOrderStatus"
+                          method="post"
+                          class="status-form">
+
+                        @Html.AntiForgeryToken()
+
+                        <input type="hidden"
+                               name="id"
+                               value="@o.Id" />
+
+                        <select name="status"
+                                class="order-status-select"
+                                data-old-status="@o.Status"
+                                onchange="showStatusPopup(this, @o.Id)">
+
+                            <option value="Pending"
+                                    selected="@(o.Status == "Pending")">
+                                Pending
+                            </option>
+
+                            <option value="Preparing"
+                                    selected="@(o.Status == "Preparing")">
+                                Preparing
+                            </option>
+
+                            <option value="Out for Delivery"
+                                    selected="@(o.Status == "Out for Delivery")">
+                                Out for Delivery
+                            </option>
+
+                            <option value="Delivered"
+                                    selected="@(o.Status == "Delivered")">
+                                Delivered
+                            </option>
+
+                            <option value="Cancelled"
+                                    selected="@(o.Status == "Cancelled")">
+                                Cancelled
+                            </option>
+
+                        </select>
+
+                    </form>
+
+                </td>
+
+            </tr>
+                        }
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<!-- STATUS CONFIRMATION POPUP -->
+
+<div id="statusPopup"
+     class="status-popup">
+
+    <div class="status-popup-box">
+
+        <div class="status-popup-icon">
+            !
+        </div>
+
+        <h2>Update Order Status</h2>
+
+        <p id="statusPopupMessage">
+            Are you sure you want to update this order?
+        </p>
+
+        <div class="status-popup-buttons">
+
+            <button type="button"
+                    class="status-cancel-btn"
+                    onclick="cancelStatusChange()">
+                Cancel
+            </button>
+
+            <button type="button"
+                    class="status-confirm-btn"
+                    onclick="confirmStatusChange()">
+                Confirm
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    let selectedForm = null;
+    let selectedSelect = null;
+    let oldStatus = "";
+
+    function showStatusPopup(select, orderId) {
+
+        oldStatus = select.getAttribute("data-old-status");
+        const newStatus = select.value;
+
+        // If nothing actually changed
+        if (oldStatus === newStatus) {
+            return;
+        }
+
+        selectedSelect = select;
+        selectedForm = select.form;
+
+        document.getElementById("statusPopupMessage").innerHTML =
+            "Are you sure you want to change " +
+            "<strong>Order #" + orderId + "</strong>" +
+            " from <strong>" + oldStatus + "</strong>" +
+            " to <strong>" + newStatus + "</strong>?";
+
+        document.getElementById("statusPopup").style.display = "flex";
+    }
+
+
+    function cancelStatusChange() {
+
+        if (selectedSelect) {
+            selectedSelect.value = oldStatus;
+        }
+
+        document.getElementById("statusPopup").style.display = "none";
+
+        selectedForm = null;
+        selectedSelect = null;
+    }
+
+
+    function confirmStatusChange() {
+
+        if (selectedForm) {
+
+            const newStatus = selectedSelect.value;
+
+            // Update old status for next change
+            selectedSelect.setAttribute(
+                "data-old-status",
+                newStatus
+            );
+
+            selectedForm.submit();
+        }
+
+    }
+
+</script>

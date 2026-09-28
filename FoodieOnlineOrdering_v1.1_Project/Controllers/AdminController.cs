@@ -115,21 +115,55 @@ public class AdminController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> UpdateOrderStatus(int id, string status)
     {
-        if (!IsAdmin) return Denied();
-        var order = await _db.Orders.FindAsync(id);
-        if (order != null)
+        if (!IsAdmin)
+            return Denied();
+
+        var allowedStatuses = new[]
         {
-            order.Status = status;
-            await _db.SaveChangesAsync();
-            TempData["Success"] = $"Order #{id} status updated.";
+        "Pending",
+        "Preparing",
+        "Out for Delivery",
+        "Delivered",
+        "Cancelled"
+    };
+
+        if (!allowedStatuses.Contains(status))
+        {
+            TempData["Error"] = "Invalid order status.";
+            return RedirectToAction(nameof(Orders));
         }
+
+        var order = await _db.Orders.FindAsync(id);
+
+        if (order == null)
+            return NotFound();
+
+        order.Status = status;
+
+        await _db.SaveChangesAsync();
+
+        TempData["Success"] =
+            $"Order #{id} status changed to {status}.";
+
         return RedirectToAction(nameof(Orders));
     }
+
 
     public async Task<IActionResult> Users()
     {
         if (!IsAdmin) return Denied();
         return View(await _db.Users.OrderByDescending(x => x.Id).ToListAsync());
+    }
+
+    public async Task<IActionResult> Messages()
+    {
+        if (!IsAdmin) return Denied();
+
+        var messages = await _db.ContactMessages
+            .OrderByDescending(x => x.CreatedAt)
+            .ToListAsync();
+
+        return View(messages);
     }
 
     [HttpPost]
