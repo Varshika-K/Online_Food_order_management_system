@@ -7,21 +7,36 @@ namespace FoodieOnlineOrdering.Controllers;
 public class ContactController : Controller
 {
     private readonly AppDbContext _db;
-    public ContactController(AppDbContext db) => _db = db;
+
+    public ContactController(AppDbContext db)
+    {
+        _db = db;
+    }
 
     [HttpGet]
-    public IActionResult Index() => View();
+    public IActionResult Index()
+    {
+        return View();
+    }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Index(ContactMessage model)
+    public async Task<IActionResult> Index(ContactMessage contactMessage)
     {
-        if (!ModelState.IsValid) return View(model);
+        if (!ModelState.IsValid)
+        {
+            return View(contactMessage);
+        }
 
-        _db.ContactMessages.Add(model);
+        contactMessage.CreatedAt = DateTime.UtcNow;
+
+        _db.ContactMessages.Add(contactMessage);
+
         await _db.SaveChangesAsync();
 
-        TempData["Success"] = "Thank you! Your message has been sent successfully.";
+        TempData["Success"] =
+            "Thank you for contacting us! Your message has been sent successfully.";
+
         return RedirectToAction(nameof(Index));
     }
 }

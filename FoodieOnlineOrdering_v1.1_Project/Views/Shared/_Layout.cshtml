@@ -7,6 +7,241 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
+<!-- CUSTOMER ORDER STATUS POPUP -->
+
+<div id="customerStatusPopup" class="customer-status-popup">
+
+    <div class="customer-status-popup-box">
+
+        <div id="customerStatusIcon" class="customer-status-icon">
+            ✓
+        </div>
+
+        <h2 id="customerStatusTitle">
+            Order Status Updated
+        </h2>
+
+        <p id="customerStatusMessage">
+        </p>
+
+        <button type="button"
+                class="btn"
+                onclick="closeCustomerStatusPopup()">
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    // Store the last known status of each order
+    let customerOrderStatuses = {};
+
+    let firstStatusCheck = true;
+
+
+    async function checkCustomerOrderStatuses() {
+
+        try {
+
+            const response =
+                await fetch('/Orders/StatusUpdates', {
+                    method: 'GET',
+                    cache: 'no-store'
+                });
+
+
+            // Customer is not logged in
+            if (!response.ok) {
+                return;
+            }
+
+
+            const orders = await response.json();
+
+
+            orders.forEach(function (order) {
+
+                const orderId = order.id;
+                const currentStatus = order.status;
+
+                const previousStatus =
+                    customerOrderStatuses[orderId];
+
+
+                // First time loading orders
+                if (previousStatus === undefined) {
+
+                    customerOrderStatuses[orderId] =
+                        currentStatus;
+
+                    return;
+                }
+
+
+                // STATUS HAS CHANGED
+                if (previousStatus !== currentStatus) {
+
+                    showCustomerOrderPopup(
+                        orderId,
+                        previousStatus,
+                        currentStatus
+                    );
+
+
+                    // Save new status
+                    customerOrderStatuses[orderId] =
+                        currentStatus;
+                }
+
+            });
+
+
+            firstStatusCheck = false;
+
+        }
+        catch (error) {
+
+            console.log(
+                "Order status notification error:",
+                error
+            );
+
+        }
+
+    }
+
+
+    function showCustomerOrderPopup(
+        orderId,
+        oldStatus,
+        newStatus
+    ) {
+
+        const popup =
+            document.getElementById(
+                "customerStatusPopup"
+            );
+
+        const icon =
+            document.getElementById(
+                "customerStatusIcon"
+            );
+
+        const title =
+            document.getElementById(
+                "customerStatusTitle"
+            );
+
+        const message =
+            document.getElementById(
+                "customerStatusMessage"
+            );
+
+
+        // Preparing
+        if (newStatus === "Preparing") {
+
+            icon.innerHTML = "👨‍🍳";
+
+            title.innerHTML =
+                "Your Order is Being Prepared";
+
+            message.innerHTML =
+                "Order <strong>#" + orderId +
+                "</strong> changed from <strong>" +
+                oldStatus +
+                "</strong> to <strong>Preparing</strong>.";
+        }
+
+
+        // Out for Delivery
+        else if (newStatus === "Out for Delivery") {
+
+            icon.innerHTML = "🚚";
+
+            title.innerHTML =
+                "Your Order is On the Way";
+
+            message.innerHTML =
+                "Order <strong>#" + orderId +
+                "</strong> is now <strong>Out for Delivery</strong>.";
+        }
+
+
+        // Delivered
+        else if (newStatus === "Delivered") {
+
+            icon.innerHTML = "✓";
+
+            title.innerHTML =
+                "Order Delivered";
+
+            message.innerHTML =
+                "Order <strong>#" + orderId +
+                "</strong> has been <strong>Delivered</strong>.";
+        }
+
+
+        // Cancelled
+        else if (newStatus === "Cancelled") {
+
+            icon.innerHTML = "✕";
+
+            title.innerHTML =
+                "Order Cancelled";
+
+            message.innerHTML =
+                "Order <strong>#" + orderId +
+                "</strong> has been <strong>Cancelled</strong>.";
+        }
+
+
+        // Pending
+        else {
+
+            icon.innerHTML = "ℹ";
+
+            title.innerHTML =
+                "Order Status Updated";
+
+            message.innerHTML =
+                "Order <strong>#" + orderId +
+                "</strong> is now <strong>" +
+                newStatus +
+                "</strong>.";
+        }
+
+
+        popup.style.display = "flex";
+    }
+
+
+    function closeCustomerStatusPopup() {
+
+        const popup =
+            document.getElementById(
+                "customerStatusPopup"
+            );
+
+        popup.style.display = "none";
+    }
+
+
+    // Check immediately
+    checkCustomerOrderStatuses();
+
+
+    // Check every 3 seconds
+    setInterval(
+        checkCustomerOrderStatuses,
+        3000
+    );
+
+</script>
 <body>
 <header class="topbar">
     <a class="brand" asp-controller="Home" asp-action="Index">Foodie</a>
